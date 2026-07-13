@@ -1,0 +1,19 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- De cirkelvormige "container" die Tux bevat -->
+  <circle cx="128" cy="128" r="118" fill="#1A202C" stroke="#38A169" stroke-width="8"/>
+  
+  <!-- De Witte Buik (curve) -->
+  <path d="M19 178 C 70 130, 186 130, 237 178 A 120 120 0 0 1 19 178 Z" fill="#FFFFFF"/>
+  
+  <!-- De Snavel -->
+  <path d="M108 135 L128 160 L148 135 Z" fill="#F6AD55"/>
+  
+  <!-- De Ogen -->
+  <ellipse cx="100" cy="95" rx="14" ry="22" fill="#FFFFFF"/>
+  <ellipse cx="156" cy="95" rx="14" ry="22" fill="#FFFFFF"/>
+  <circle cx="106" cy="100" r="6" fill="#1A202C"/>
+  <circle cx="150" cy="100" r="6" fill="#1A202C"/>
+  
+  <!-- Subtiel diafragma-accent in het groen -->
+  <circle cx="128" cy="128" r="90" stroke="#38A169" stroke-width="2" stroke-opacity="0.3"/>
+</svg>
