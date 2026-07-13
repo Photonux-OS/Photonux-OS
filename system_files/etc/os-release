@@ -1,0 +1,5 @@
+NAME="Photonux OS"
+PRETTY_NAME="Photonux OS"
+ID=photonux
+ID_LIKE=fedora
+VERSION_ID="1.0"
