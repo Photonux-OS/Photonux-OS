@@ -1,5 +1,7 @@
 NAME="Photonux OS"
-PRETTY_NAME="Photonux OS"
+PRETTY_NAME="Photonux OS 1.0"
 ID=photonux
 ID_LIKE=fedora
 VERSION_ID="1.0"
+HOME_URL="https://www.photonux.nl"
+
