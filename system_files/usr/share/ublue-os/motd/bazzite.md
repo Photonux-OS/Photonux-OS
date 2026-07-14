@@ -1,5 +1,5 @@
 # Welcome to Photonux OS 
-󱋩 `%IMAGE_NAME%:%IMAGE_BRANCH%`
+󱋩 Photonux OS - nvidia
 󰟀 `%GREENBOOT%`
 
 |  Command | Description |
