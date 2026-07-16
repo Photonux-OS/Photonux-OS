@@ -25,3 +25,6 @@ dnf5 install -y tmux
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+mkdir -p /etc/bazzite
+echo "photonux-os" > /etc/bazzite/image_name
