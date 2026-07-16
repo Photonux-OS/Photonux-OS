@@ -1,5 +1,5 @@
 # Welcome to Photonux OS 
-󱋩 Photonux OS - nvidia
+
 󰟀 `%GREENBOOT%`
 
 |  Command | Description |
