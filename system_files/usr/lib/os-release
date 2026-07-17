@@ -1,0 +1,17 @@
+NAME="Photonux OS"
+PRETTY_NAME="Photonux OS"
+ID=photonux
+ID_LIKE=fedora
+
+HOME_URL="https://www.photonux.nl"
+
+LOGO=logo
+
+DEFAULT_HOSTNAME=photonux
+
+VARIANT="Photonux"
+VARIANT_ID=photonux-os
+
+BOOTLOADER_NAME="Photonux OS"
+
+IMAGE_ID="photonux-os"
