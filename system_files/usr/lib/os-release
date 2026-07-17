@@ -5,7 +5,7 @@ ID_LIKE=fedora
 
 HOME_URL="https://www.photonux.nl"
 
-LOGO=logo
+LOGO=photonuxos-logo
 
 DEFAULT_HOSTNAME=photonux
 
