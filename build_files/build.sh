@@ -6,15 +6,12 @@ set -ouex pipefail
 cp -avf "/ctx/system_files"/. /
 
 ### Install packages
-
 dnf5 install -y tmux
 
 ### Enable services
-
 systemctl enable podman.socket
 
 ### Photonux identity
-
 mkdir -p /etc/bazzite
 echo "photonux-os" > /etc/bazzite/image_name
 
