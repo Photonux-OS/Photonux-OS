@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Photonux OS Updater
+Comment=Update Photonux OS
+Exec=bazzite-updater
+Icon=photonux-os
+Terminal=false
+Type=Application
+Categories=System;
+StartupNotify=true
