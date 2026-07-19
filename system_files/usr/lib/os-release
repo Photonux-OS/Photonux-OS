@@ -1,6 +1,6 @@
 NAME="Photonux OS"
 PRETTY_NAME="Photonux OS"
-ID=photonux
+ID=fedora
 ID_LIKE=fedora
 
 VERSION="44"
