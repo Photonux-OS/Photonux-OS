@@ -33,19 +33,12 @@ sha256sum /usr/share/pixmaps/system-logo-white.png || true
 echo "===== PLYMOUTH DEFAULTS ====="
 cat /usr/share/plymouth/plymouthd.defaults || true
 
-echo "===== REMOVE EXISTING INITRAMFS ====="
-
-rm -f /usr/lib/modules/*/initramfs.img || true
-rm -f /boot/initramfs-*.img || true
-
 echo "===== DRACUT START ====="
 
-KVER=$(basename /usr/lib/modules/*)
 dracut \
+  --regenerate-all \
   --force \
-  --verbose \
-  "/usr/lib/modules/${KVER}/initramfs.img" \
-  "${KVER}"
+  --verbose
 
 echo "===== DRACUT COMPLETED ====="
 
