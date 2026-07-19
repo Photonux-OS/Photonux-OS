@@ -81,6 +81,10 @@ jobs:
           sudo -E $(command -v just) ostree-rechunk \
             ${IMAGE_NAME} \
             ${DEFAULT_TAG}
+      - name: Check watermark after rechunk
+        run: |
+         sudo podman run --rm localhost/photonux-os:latest \
+          sha256sum /usr/share/plymouth/themes/spinner/watermark.png
 
       # If you are feeling adventurous, use the new distro agnostic rechunker
       # https://github.com/coreos/chunkah
