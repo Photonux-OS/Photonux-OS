@@ -9,7 +9,7 @@ on:
   push:
     branches:
       - main
-      - test-bazzite-initramfs
+
     paths-ignore:
       - '**/README.md'
   workflow_dispatch:
