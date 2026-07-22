@@ -3,8 +3,8 @@ PRETTY_NAME="Photonux OS"
 ID=fedora
 ID_LIKE=fedora
 
-VERSION="Stable"
-VERSION_ID="1.0"
+VERSION="44"
+VERSION_ID="44"
 
 HOME_URL="https://www.photonux.nl"
 
