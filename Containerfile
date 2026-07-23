@@ -30,7 +30,13 @@ FROM quay.io/fedora/fedora-bootc:44
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-RUN rpm-ostree install akmod-nvidia
+RUN dnf -y install \
+    https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-44.noarch.rpm \
+    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-44.noarch.rpm
+
+RUN rpm-ostree install \
+    akmod-nvidia \
+    xorg-x11-drv-nvidia
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
