@@ -7,12 +7,12 @@ COPY system_files /system_files
 # FROM ghcr.io/ublue-os/bazzite:stable@sha256:b923f92d5a5b59eb992e269383eba2744601052da9d3d1595f76e79aa6ce2df0
 # Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite-nvidia-open:testing
-# FROM ghcr.io/ublue-os/aurora-dx-nvidia-open:stable
+FROM ghcr.io/ublue-os/aurora-dx-nvidia-open:stable
 # FROM ghcr.io/ublue-os/bluefin-nvidia-open:stable
 # 
 # ... and so on, here are more base images
 # Universal Blue Images: https://github.com/orgs/ublue-os/packages
-FROM quay.io/fedora/fedora-bootc:44
+# FROM quay.io/fedora/fedora-bootc:44
 # CentOS base images: quay.io/centos-bootc/centos-bootc:stream10
 
 ### [IM]MUTABLE /opt
@@ -29,14 +29,6 @@ FROM quay.io/fedora/fedora-bootc:44
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
-
-RUN dnf -y install \
-    https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-44.noarch.rpm \
-    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-44.noarch.rpm
-
-RUN rpm-ostree install \
-    akmod-nvidia \
-    xorg-x11-drv-nvidia
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
