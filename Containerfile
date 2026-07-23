@@ -30,7 +30,6 @@ FROM ghcr.io/ublue-os/aurora-dx-nvidia-open:stable
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-<<<<<<< HEAD
 #RUN dnf -y install \
 #    https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-44.noarch.rpm \
 #    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-44.noarch.rpm
@@ -39,8 +38,6 @@ FROM ghcr.io/ublue-os/aurora-dx-nvidia-open:stable
 #    akmod-nvidia \
 #    xorg-x11-drv-nvidia
 
-=======
->>>>>>> 87415d15d7b551a2658e2b07ef57c84a515429f2
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
